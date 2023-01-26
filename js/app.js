@@ -32,14 +32,19 @@ function whoisbetter() {
 
 whoisbetter();
 
-let whoownswwe = prompt('Who owns the WWE? Vince or Triple H?').toLowerCase();
-if (whoownswwe === 'vince' || whoownswwe === 'v') {
+function ownerofWWE(){
+  let whoownswwe = prompt('Who owns the WWE? Vince or Triple H?').toLowerCase();
+  if (whoownswwe === 'vince' || whoownswwe === 'v') {
   // console.log('Yes, he does');
-  alert('Yes, he does');
-} else if (whoisbetter === 'triple h' || 'hhh') {
+    alert('Yes, he does');
+  } else if (whoisbetter === 'triple h' || 'hhh') {
   // console.log('That is incorrect');
-  alert('That is incorrect');
+    alert('That is incorrect');
+  }
 }
+
+ownerofWWE();
+
 let whatisbetter = prompt('STARCADE OR WRESTLEMANIA?').toLowerCase();
 if (whatisbetter === 'starcade') {
   // console.log('Old school but i prefer Wrestlemania');
