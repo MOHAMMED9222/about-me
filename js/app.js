@@ -20,13 +20,18 @@ function Questio1() {
 }
 Questio1();
 
-let whoisbetter = prompt("Who is better? CENA or ORTON?").toLowerCase();
-if (whoisbetter === 'cena' || whoisbetter === 'c') {
-  console.log('Thats right, YOU CANT SEE MEEEE!');
-} else if (whoisbetter === 'orton') {
-  // console.log('Not even his dad was better');
-  alert('Not even his dad was better');
+function whoisbetter() {
+  let whoisbetter = prompt("Who is better? CENA or ORTON?").toLowerCase();
+  if (whoisbetter === 'cena' || whoisbetter === 'c') {
+    console.log('Thats right, YOU CANT SEE MEEEE!');
+  } else if (whoisbetter === 'orton') {
+    // console.log('Not even his dad was better');
+    alert('Not even his dad was better');
+  }
 }
+
+whoisbetter();
+
 let whoownswwe = prompt('Who owns the WWE? Vince or Triple H?').toLowerCase();
 if (whoownswwe === 'vince' || whoownswwe === 'v') {
   // console.log('Yes, he does');
