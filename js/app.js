@@ -10,6 +10,7 @@ console.log('Greetings ' + username)
 //one false and it will not run
 // ll is the 'logical or' double pipe
 // ! the logical not 
+// ${username} money curly
 
 let doilikewrestling = prompt("Do i like wrestling? YES or NO?").toLowerCase();
 if (doilikewrestling === 'yes' || doilikewrestling === 'y'){
@@ -46,5 +47,64 @@ if (cantyoutell === 'yes' || 'y'){
   // console.log('OFF THE TOP ROPE!!!');
   alert('OFF THE TOP ROPE!!!');
 }
+
+
+let score = 0
+
+let myFavChampionship = ['United States', 'European'];
+let userResponse = prompt('What is my favorite wwe title?')
+
+let attemptsThatRemain = 6;
+let answeredCorrectly = false;
+
+while (attemptsThatRemain > 0) {
+  attemptsThatRemain--;
+  console.log(`I'm in the while loop. you have ${attemptsThatRemain} attempts remaining`);
+  for (let i = 0; i < myFavChampionship.length; i++) {
+    console.log(myFavChampionship[i]);
+    if (myFavChampionship[i].toLowerCase() === userResponse.toLowerCase()) {
+      console.log('You are correct!')
+      score++; 
+      answeredCorrectly = true
+      attemptsThatRemain = 0 
+    } 
+  } 
+  if (!answeredCorrectly){
+  userResponse = prompt('What is my favorite wwe title?') 
+  }
+}
+
+let attemptsRemaining = 4;
+let howmanyLosses = 2
+
+ while (attemptsRemaining) {
+   attemptsRemaining--;
+ // code that runs as long as the condition is 
+ // evaluated to true
+let userResponse = prompt('How many times did Taker lose at Wrestlemania?')
+   userResponse = Number(userResponse)
+
+   if(userResponse === howmanyLosses){
+     console.log('that is correct');
+     break 
+   } else {
+     console.log('that is wrong');
+     if (userResponse > howmanyLosses) {
+       console.log('too high, try lower!');
+     } else {
+       console.log('thats toooo low');
+       }
+     }  
+   console.log(`the users has ${attemptsRemaining} attempts remaining`);
+
+   if (attemptsRemaining === 0) {
+     console.log('the answer is 2');
+   }
+   }
 // console.log('Enjoy the website ' + username)
 
+
+// let x = 4;
+// if (x < 5) {
+  // this code will run if x < 5 
+//}
