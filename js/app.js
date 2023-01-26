@@ -12,13 +12,13 @@ console.log('Greetings ' + username)
 // ! the logical not 
 // ${username} money curly
 
-function Questio1() {
+function questio1() {
   let doilikewrestling = prompt("Do i like wrestling? YES or NO?").toLowerCase();
   if (doilikewrestling === 'yes' || doilikewrestling === 'y') {
     console.log('you are correct! i love wrestling')
   }
 }
-Questio1();
+questio1();
 
 function whoisbetter() {
   let whoisbetter = prompt("Who is better? CENA or ORTON?").toLowerCase();
@@ -45,14 +45,19 @@ function ownerofWWE(){
 
 ownerofWWE();
 
-let whatisbetter = prompt('STARCADE OR WRESTLEMANIA?').toLowerCase();
-if (whatisbetter === 'starcade') {
+function wHatsBetter(){
+  let whatisbetter = prompt('STARCADE OR WRESTLEMANIA?').toLowerCase();
+  if (whatisbetter === 'starcade') {
   // console.log('Old school but i prefer Wrestlemania');
-  alert('Old school but i prefer Wrestlemania');
-} else if (whatisbetter === 'wrestlemania') {
+    alert('Old school but i prefer Wrestlemania');
+  } else if (whatisbetter === 'wrestlemania') {
   // console.log('of course, so many classics');
-  alert('of course, so many classics');
+    alert('of course, so many classics');
+  }
 }
+
+wHatsBetter();
+
 let cantyoutell = prompt('Cant you tell i love wrestling?YES OR NO?').toLowerCase();
 if (cantyoutell === 'yes' || 'y') {
   // console.log('LETS GO');
