@@ -32,41 +32,44 @@ function whoisbetter() {
 
 whoisbetter();
 
-function ownerofWWE(){
+function ownerofWWE() {
   let whoownswwe = prompt('Who owns the WWE? Vince or Triple H?').toLowerCase();
   if (whoownswwe === 'vince' || whoownswwe === 'v') {
-  // console.log('Yes, he does');
+    // console.log('Yes, he does');
     alert('Yes, he does');
   } else if (whoisbetter === 'triple h' || 'hhh') {
-  // console.log('That is incorrect');
+    // console.log('That is incorrect');
     alert('That is incorrect');
   }
 }
 
 ownerofWWE();
 
-function wHatsBetter(){
+function wHatsBetter() {
   let whatisbetter = prompt('STARCADE OR WRESTLEMANIA?').toLowerCase();
   if (whatisbetter === 'starcade') {
-  // console.log('Old school but i prefer Wrestlemania');
+    // console.log('Old school but i prefer Wrestlemania');
     alert('Old school but i prefer Wrestlemania');
   } else if (whatisbetter === 'wrestlemania') {
-  // console.log('of course, so many classics');
+    // console.log('of course, so many classics');
     alert('of course, so many classics');
   }
 }
 
 wHatsBetter();
 
-let cantyoutell = prompt('Cant you tell i love wrestling?YES OR NO?').toLowerCase();
-if (cantyoutell === 'yes' || 'y') {
-  // console.log('LETS GO');
-  alert('LETS GO');
-} else if (cantyoutell === 'no' || 'n') {
-  // console.log('OFF THE TOP ROPE!!!');
-  alert('OFF THE TOP ROPE!!!');
+function cantYoutell() {
+  let cantyoutell = prompt('Cant you tell i love wrestling?YES OR NO?').toLowerCase();
+  if (cantyoutell === 'yes' || 'y') {
+    // console.log('LETS GO');
+    alert('LETS GO');
+  } else if (cantyoutell === 'no' || 'n') {
+    // console.log('OFF THE TOP ROPE!!!');
+    alert('OFF THE TOP ROPE!!!');
+  }
 }
 
+cantYoutell();
 
 let score = 0
 
