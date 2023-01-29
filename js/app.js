@@ -78,7 +78,7 @@ function favTitle() {
 
  
 
-  let myFavChampionship = ['European'];
+  let myFavChampionship = ['European', 'Intercontinental'];
   let userResponse = prompt('What is my favorite wwe title?')
 
   let attemptsThatRemain = 6;
@@ -86,16 +86,20 @@ function favTitle() {
 
   while (attemptsThatRemain > 0) {
     attemptsThatRemain--;
-    //console.log(`I'm in the while loop. you have ${attemptsThatRemain} attempts remaining`);
-    alert(`Ill give you a hint. Think Europe. You have ${attemptsThatRemain} attempts remaining`);
+    //console.log(`Ill give you a hint. Think Europe. You have ${attemptsThatRemain} attempts remaining`);
     for (let i = 0; i < myFavChampionship.length; i++) {
       console.log(myFavChampionship[i]);
       if (myFavChampionship[i].toLowerCase() === userResponse.toLowerCase()) {
-        console.log('You are correct!')
+       // console.log('You are correct!')
+       alert('You are correct');
         score++;
-        answeredCorrectly = true
-        attemptsThatRemain = 0
-      }
+        answeredCorrectly = true;
+        attemptsThatRemain = 0;
+        break;
+    } else if  (myFavChampionship[i].toLowerCase() !== userResponse.toLowerCase()) {
+      alert(`Ill give you a hint. Think Europe. You have ${attemptsThatRemain} attempts remaining`);
+
+  }
     }
     if (!answeredCorrectly) {
       userResponse = prompt('What is my favorite wwe title?')
@@ -111,7 +115,7 @@ function takerw() {
   let attemptsRemaining = 4;
   let howmanyLosses = 2
 
-  while (attemptsRemaining) {
+  while (attemptsRemaining > 0) {
     attemptsRemaining--;
     // code that runs as long as the condition is 
     // evaluated to true
@@ -119,20 +123,25 @@ function takerw() {
     userResponse = Number(userResponse)
 
     if (userResponse === howmanyLosses) {
-      console.log('that is correct');
+      // console.log('that is correct');
+      alert('that is correct');
       break
     } else {
-      console.log('that is wrong');
+      //console.log('that is wrong');
+      alert('that is wrong')
       if (userResponse > howmanyLosses) {
-        console.log('too high, try lower!');
+        // console.log('too high, try lower!');
+        alert('too high, try again')
       } else {
-        console.log('thats toooo low');
+       // console.log('thats toooo low');
+        alert('thats too low')
       }
     }
     console.log(`the users has ${attemptsRemaining} attempts remaining`);
 
     if (attemptsRemaining === 0) {
-      console.log('the answer is 2');
+      // console.log('the answer is 2');
+      alert('sorry, the answer is 2');
     }
   }
 }

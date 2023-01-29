@@ -1,0 +1,71 @@
+article {
+  border: 1px solid black;
+}
+
+section {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  position: static;
+}
+div {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  /* left: 100px; */
+}
+
+div#one {
+  left: 300px;
+  top: 200px;
+}
+div#two {
+  bottom: 100px;
+}
+
+div#three {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+div.car {
+  border-color: green;
+}
+
+.car {
+  border: 2px solid red;
+}
+
+div > span {
+  background-color: pink;
+}
+
+section ~ span {
+  /* ~ any span that is a sibling of section */
+  background-color: magenta;
+}
+section + span {
+  /* + a span that is an adjacent sibling of sections */
+  background-color: green;
+}
+
+ul::after {
+  /* pseudo elements */
+  content: 'ul::after';
+}
+
+/* pseudo classes 
+li: hover {
+  background-color: antiquewhite;
+}
+
+li:nth-child(2) {
+  color: red;
+} */
+
+div {
+  float: left;
+}

@@ -22,42 +22,16 @@ h1 {
   font-size: 20px;
   margin: 1rem;
 }
-ul {
-  list-style: disc;
-  margin: 1rem;
-}
 
-article {
-  border: 1px solid black;
-}
+section, span {
+border: 15px solid red;
+width: 80%;
+/* margin: auto; margin-top: 5rem; */
 
-section {
-  border: medium solid black;
-  margin: 1rem;
-  padding: 1rem;
-  position: static;
-}
-div {
-  border: medium solid black;
-  margin: 1rem;
-  padding: 1rem;
-  position: relative;
-  /* left: 100px; */
-}
-
-div#one {
-  left: 300px;
-  top: 200px;
-}
-div#two {
-  bottom: 100px;
-}
-
-div#three {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: white;
+/* clockwise starting at the to */
+/* top right bottom left */
+margin: auto;
+margin-top: 5rem;
 }
 
 
